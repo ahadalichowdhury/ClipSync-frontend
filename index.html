@@ -1,0 +1,1419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      ClipSync - Advanced Clipboard Manager for Windows, Mac & Linux | Download
+      Free
+    </title>
+    <meta
+      name="description"
+      content="Download ClipSync, the ultimate clipboard manager for Windows, macOS and Linux. Smart clipboard management with global hotkeys, instant search, privacy features, and multi-format support. Free download available."
+    />
+    <meta
+      name="keywords"
+      content="clipboard manager, windows clipboard, mac clipboard, linux clipboard, clipboard history, productivity app, ClipSync, global hotkeys, Windows 11 UI, privacy, multi-format"
+    />
+    <meta name="author" content="ClipSync" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="ClipSync - Advanced Clipboard Manager for Windows, Mac & Linux"
+    />
+    <meta
+      property="og:description"
+      content="Download ClipSync, the ultimate clipboard manager for Windows, macOS and Linux. Smart clipboard management with Windows 11 UI, global hotkeys, instant search, and privacy features."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clipsync.app" />
+    <meta
+      property="og:image"
+      content="https://clipsync.app/images/clipsync-og-image.jpg"
+    />
+    <meta property="og:site_name" content="ClipSync" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="ClipSync - Advanced Clipboard Manager"
+    />
+    <meta
+      name="twitter:description"
+      content="Download ClipSync for Windows, Mac & Linux. The ultimate clipboard manager with global hotkeys, and privacy features."
+    />
+    <meta
+      name="twitter:image"
+      content="https://clipsync.app/images/clipsync-twitter-card.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clipsync.app" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ClipSync",
+        "description": "Advanced clipboard manager for Windows, macOS and Linux with Windows 11-inspired UI, global hotkeys, instant search, privacy features, and multi-format support.",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": ["Windows", "macOS", "Linux"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "downloadUrl": "https://clipsync.app/download",
+        "softwareVersion": "1.0.0",
+        "datePublished": "2024-01-15",
+        "author": {
+          "@type": "Organization",
+          "name": "ClipSync"
+        },
+        "screenshot": "https://clipsync.app/images/clipsync-screenshot.jpg",
+        "featureList": [
+          "Smart Clipboard Management",
+          "Global Hotkeys (Ctrl/Cmd + Shift + V)",
+          "Instant Search with Fuzzy Matching",
+          "Windows 11-Inspired UI",
+          "Multi-Format Support (Text, Images, Files, HTML, RTF)",
+          "Privacy & Security Features",
+          "Cross-Platform Support",
+          "Keyboard Shortcuts",
+          "Auto-Cleanup",
+          "Pin Important Items"
+        ]
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .nav-links a:hover {
+        opacity: 0.8;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .download-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .download-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .download-btn.primary {
+        background: #ff6b6b;
+        border-color: #ff6b6b;
+      }
+
+      .download-btn.primary:hover {
+        background: #ff5252;
+        border-color: #ff5252;
+      }
+
+      /* Disabled download button state */
+      .download-btn.disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border-color: rgba(255, 255, 255, 0.2) !important;
+      }
+
+      .download-btn.disabled:hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      /* Features Section */
+      .features {
+        padding: 4rem 0;
+        background: #f8f9fa;
+      }
+
+      .features h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #333;
+      }
+
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .feature-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .feature-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .feature-card p {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      /* Screenshots Section */
+      .screenshots {
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .screenshots h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #333;
+      }
+
+      .screenshot-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .screenshot {
+        background: #f0f0f0;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .screenshot img {
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 1.2rem;
+      }
+
+      /* Download Section */
+      .download-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .download-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .download-section p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .version-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .version-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .version-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .version-card p {
+        margin-bottom: 1.5rem;
+        opacity: 0.8;
+      }
+
+      .system-requirements {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        text-align: left;
+      }
+
+      .system-requirements h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+
+      .system-requirements ul {
+        list-style: none;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      .system-requirements li {
+        margin-bottom: 0.2rem;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+        text-align: center;
+        color: #ccc;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+
+        .download-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .screenshot-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* Focus styles for accessibility */
+      .download-btn:focus,
+      .nav-links a:focus {
+        outline: 2px solid #ff6b6b;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">ClipSync</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <!-- <li><a href="#shortcuts">Shortcuts</a></li> -->
+          <!-- <li><a href="screenshots.html">Screenshots</a></li> -->
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1>ClipSync Clipboard Manager</h1>
+          <p>
+            The ultimate clipboard manager for Windows, macOS, and Linux. Smart
+            clipboard management with Windows 11-inspired UI, powerful search,
+            keyboard shortcuts, and advanced privacy features.
+          </p>
+          <div class="download-buttons">
+            <a
+              class="download-btn primary disabled"
+              aria-label="Download ClipSync for Windows (Coming Soon)"
+              tabindex="-1"
+              aria-disabled="true"
+            >
+              🪟 Download for Windows (Coming Soon..)
+            </a>
+
+            <a
+            href="https://github.com/ahadalichowdhury/ClipSync-app/releases/tag/v1.0.0"
+            class="download-btn primary"
+            aria-label="Download ClipSync for Mac"
+            target="_blank"
+            >
+              🍎 Download for macOS
+            </a>
+            <a
+            class="download-btn primary disabled"
+            aria-label="Download ClipSync for Linux (Coming Soon)"
+            tabindex="-1"
+            aria-disabled="true"
+            >
+              🐧 Download for Linux (Coming Soon..)
+            </a>
+          </div>
+
+          <!-- Key Features Highlight -->
+          <div
+            style="
+              margin-top: 3rem;
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 2rem;
+              opacity: 0.9;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <span style="font-size: 1.2rem">⚡</span>
+              <span>Global Hotkeys</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <span style="font-size: 1.2rem">🔍</span>
+              <span>Instant Search</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <span style="font-size: 1.2rem">🎨</span>
+              <span>Windows 11 UI</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <span style="font-size: 1.2rem">🔒</span>
+              <span>Privacy First</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <span style="font-size: 1.2rem">📋</span>
+              <span>Multi-Format</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container">
+          <h2>Powerful Features</h2>
+          <div class="features-grid">
+            <!-- Smart Clipboard Management -->
+            <article class="feature-card">
+              <div class="feature-icon">📋</div>
+              <h3>Smart Clipboard Management</h3>
+              <p>
+                Real-time monitoring with persistent history. Multi-format
+                support for Text, Images, Files, HTML, RTF with intelligent
+                categorization and duplicate detection.
+              </p>
+            </article>
+
+            <!-- Powerful Search & Filter -->
+            <article class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h3>Powerful Search & Filter</h3>
+              <p>
+                Instant search with fuzzy matching, content type filtering, date
+                range filters, source application filtering, and advanced regex
+                support.
+              </p>
+            </article>
+
+            <!-- Windows 11-Inspired UI -->
+            <article class="feature-card">
+              <div class="feature-icon">🎨</div>
+              <h3>Modern Windows 11-Inspired UI</h3>
+              <p>
+                Fluent Design with acrylic blur effects, dynamic theming (Light,
+                Dark, Auto), responsive grid layout, and smooth animations.
+              </p>
+            </article>
+
+            <!-- System Integration -->
+            <article class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>System Integration</h3>
+              <p>
+                Global hotkeys (Ctrl/Cmd + Shift + V), system tray integration,
+                auto-start on boot, and full cross-platform support.
+              </p>
+            </article>
+
+            <!-- Privacy & Security -->
+            <article class="feature-card">
+              <div class="feature-icon">🔒</div>
+              <h3>Privacy & Security</h3>
+              <p>
+                Local storage only (no cloud sync), excluded apps configuration,
+                incognito mode, auto-cleanup, and optional data encryption.
+              </p>
+            </article>
+
+            <!-- Advanced Features -->
+            <article class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Advanced Features</h3>
+              <p>
+                Usage analytics, export/import clipboard history, bulk
+                operations, keyboard shortcuts for power users, and extensible
+                plugin system.
+              </p>
+            </article>
+
+            <!-- Pin Important Items -->
+            <article class="feature-card">
+              <div class="feature-icon">📌</div>
+              <h3>Pin Important Items</h3>
+              <p>
+                Pin frequently used clipboard items for quick access. Smart
+                merging prevents duplicates while keeping your favorites always
+                available.
+              </p>
+            </article>
+
+            <!-- Multi-Format Support -->
+            <article class="feature-card">
+              <div class="feature-icon">🗂️</div>
+              <h3>Multi-Format Support</h3>
+              <p>
+                Handle Text, Images, Files, URLs, Code snippets, HTML, and RTF
+                formats with intelligent auto-detection and categorization.
+              </p>
+            </article>
+
+            <!-- Keyboard Shortcuts -->
+            <article class="feature-card">
+              <div class="feature-icon">⌨️</div>
+              <h3>Keyboard Shortcuts</h3>
+              <p>
+                Complete keyboard navigation with customizable shortcuts.
+                Navigate, search, paste, and manage clipboard items without
+                touching the mouse.
+              </p>
+            </article>
+
+            <!-- Accessibility Compliant -->
+            <article class="feature-card">
+              <div class="feature-icon">♿</div>
+              <h3>Accessibility Compliant</h3>
+              <p>
+                WCAG 2.1 AA compliant design with screen reader support, high
+                contrast modes, and keyboard-only navigation for all users.
+              </p>
+            </article>
+
+            <!-- Auto-Cleanup -->
+            <article class="feature-card">
+              <div class="feature-icon">🧹</div>
+              <h3>Auto-Cleanup</h3>
+              <p>
+                Configurable retention policies automatically clean old entries.
+                Set limits from 40-1000 items with smart cleanup algorithms.
+              </p>
+            </article>
+
+            <!-- Cross-Platform -->
+            <article class="feature-card">
+              <div class="feature-icon">🌐</div>
+              <h3>Cross-Platform</h3>
+              <p>
+                Native support for Windows, macOS, and Linux with
+                platform-specific optimizations and consistent user experience
+                across all systems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Keyboard Shortcuts Section -->
+      <!-- <section id="shortcuts" class="features" style="background: white">
+        <div class="container">
+          <h2>Keyboard Shortcuts</h2>
+          <p
+            style="
+              text-align: center;
+              font-size: 1.2rem;
+              margin-bottom: 3rem;
+              color: #666;
+            "
+          >
+            Master ClipSync with these powerful keyboard shortcuts for
+            lightning-fast productivity
+          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+              gap: 2rem;
+              max-width: 1000px;
+              margin: 0 auto;
+            "
+          >
+            <div
+              style="
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 15px;
+                border-left: 4px solid #667eea;
+              "
+            >
+              <h3 style="color: #333; margin-bottom: 1.5rem; font-size: 1.3rem">
+                🚀 Main Actions
+              </h3>
+              <div style="space-y: 1rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Show/Hide ClipSync</span>
+                  <code
+                    style="
+                      background: #667eea;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + Shift + V</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Clear clipboard history</span>
+                  <code
+                    style="
+                      background: #667eea;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + Shift + C</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Pin current item</span>
+                  <code
+                    style="
+                      background: #667eea;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + Shift + P</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="color: #666">Open Settings</span>
+                  <code
+                    style="
+                      background: #667eea;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + ,</code
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 15px;
+                border-left: 4px solid #ff6b6b;
+              "
+            >
+              <h3 style="color: #333; margin-bottom: 1.5rem; font-size: 1.3rem">
+                ⌨️ Navigation
+              </h3>
+              <div style="space-y: 1rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Navigate items</span>
+                  <code
+                    style="
+                      background: #ff6b6b;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >↑ / ↓</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Paste selected item</span>
+                  <code
+                    style="
+                      background: #ff6b6b;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Enter</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Remove selected item</span>
+                  <code
+                    style="
+                      background: #ff6b6b;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Delete</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="color: #666">Hide window</span>
+                  <code
+                    style="
+                      background: #ff6b6b;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Escape</code
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- <div
+              style="
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 15px;
+                border-left: 4px solid #4ecdc4;
+              "
+            >
+              <h3 style="color: #333; margin-bottom: 1.5rem; font-size: 1.3rem">
+                🔍 Search & Filter
+              </h3>
+              <div style="space-y: 1rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Focus search box</span>
+                  <code
+                    style="
+                      background: #4ecdc4;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + F</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Filter by type</span>
+                  <code
+                    style="
+                      background: #4ecdc4;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + 1-5</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Clear search</span>
+                  <code
+                    style="
+                      background: #4ecdc4;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Escape</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="color: #666">Advanced search</span>
+                  <code
+                    style="
+                      background: #4ecdc4;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + Shift + F</code
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                background: #f8f9fa;
+                padding: 2rem;
+                border-radius: 15px;
+                border-left: 4px solid #ffa726;
+              "
+            >
+              <h3 style="color: #333; margin-bottom: 1.5rem; font-size: 1.3rem">
+                ⚙️ Configuration
+              </h3>
+              <div style="space-y: 1rem">
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Toggle theme</span>
+                  <code
+                    style="
+                      background: #ffa726;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + T</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Export history</span>
+                  <code
+                    style="
+                      background: #ffa726;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + E</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid #e0e0e0;
+                  "
+                >
+                  <span style="color: #666">Import history</span>
+                  <code
+                    style="
+                      background: #ffa726;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + I</code
+                  >
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0.5rem 0;
+                  "
+                >
+                  <span style="color: #666">Toggle incognito</span>
+                  <code
+                    style="
+                      background: #ffa726;
+                      color: white;
+                      padding: 0.3rem 0.6rem;
+                      border-radius: 6px;
+                      font-size: 0.9rem;
+                    "
+                    >Ctrl/Cmd + Shift + I</code
+                  >
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section id="screenshots" class="screenshots">
+        <div class="container">
+          <h2>See ClipSync in Action</h2>
+          <div class="screenshot-container">
+            <div class="screenshot">
+              <div
+                style="
+                  width: 100%;
+                  height: 250px;
+                  background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #999;
+                  font-size: 1.2rem;
+                "
+              >
+                ClipSync macOS Interface
+              </div>
+              <h3>macOS Native Interface</h3>
+              <p>Beautiful, native macOS design that feels right at home</p>
+            </div>
+            <div class="screenshot">
+              <div
+                style="
+                  width: 100%;
+                  height: 250px;
+                  background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                  border-radius: 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #999;
+                  font-size: 1.2rem;
+                "
+              >
+                ClipSync Linux Interface
+              </div>
+              <h3>Linux Desktop Integration</h3>
+              <p>
+                Seamless integration with popular Linux desktop environments
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="download" class="download-section">
+        <div class="container">
+          <h2>Download ClipSync</h2>
+          <p>Choose your platform and start boosting your productivity today</p>
+
+          <div class="version-info">
+            <div class="version-card" id="download-windows">
+              <h3>🪟 Windows Version</h3>
+              <p>Compatible with Windows 10 and Windows 11</p>
+              <div class="system-requirements">
+                <h4>System Requirements:</h4>
+                <ul>
+                  <li>• Windows 10 (1903) or later</li>
+                  <li>• 120 MB free disk space</li>
+                  <li>• .NET Framework 4.8 or later</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 1rem;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  href="https://github.com/ahadalichowdhury/ClipSync-app/releases/tag/v1.0.0"
+                  class="download-btn primary"
+                  download
+                  aria-label="Download ClipSync installer for Windows"
+                >
+                  Download
+                </a>
+                <!-- <a
+                  href="https://github.com/ahadalichowdhury/ClipSync-app/releases/tag/v1.0.0"
+                  class="download-btn"
+                  download
+                  aria-label="Download ClipSync portable for Windows"
+                >
+                  Portable Version (95 MB)
+                </a> -->
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8">
+                Version 1.0.0 • Updated May 2025
+              </p>
+            </div>
+
+            <div class="version-card" id="download-mac">
+              <h3>🍎 macOS Version</h3>
+              <p>Compatible with macOS 10.15 Catalina and later</p>
+              <div class="system-requirements">
+                <h4>System Requirements:</h4>
+                <ul>
+                  <li>• macOS 10.15 or later</li>
+                  <li>• 120 MB free disk space</li>
+                  <li>• Intel or Apple Silicon Mac</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 1rem;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  href="https://github.com/ahadalichowdhury/ClipSync-app/releases/tag/v1.0.0"
+                  class="download-btn primary"
+                  download
+                  aria-label="Download ClipSync DMG file for macOS"
+                >
+                  Download
+                </a>
+                <!-- <a
+                  href="/downloads/ClipSync-1.0.0-arm64.dmg"
+                  class="download-btn"
+                  download
+                  aria-label="Download ClipSync ARM64 DMG for Apple Silicon"
+                >
+                  Apple Silicon (110 MB)
+                </a> -->
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8">
+                Version 1.0.0 • Updated January 2024
+              </p>
+            </div>
+
+            <div class="version-card" id="download-linux">
+              <h3>🐧 Linux Version</h3>
+              <p>Available for Ubuntu, Fedora, and other major distributions</p>
+              <div class="system-requirements">
+                <h4>System Requirements:</h4>
+                <ul>
+                  <li>• Ubuntu 18.04+ / Fedora 30+</li>
+                  <li>• 100 MB free disk space</li>
+                  <li>• X11 or Wayland display server</li>
+                </ul>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 1rem;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  href="https://github.com/ahadalichowdhury/ClipSync-app/releases/tag/v1.0.0"
+                  class="download-btn primary"
+                  download
+                  aria-label="Download ClipSync AppImage for Linux"
+                >
+                  Download
+                </a>
+                <!-- <a
+                  href="/downloads/clipsync_1.0.0_amd64.deb"
+                  class="download-btn"
+                  download
+                  aria-label="Download ClipSync DEB package for Ubuntu/Debian"
+                >
+                  .deb
+                </a> -->
+                <!-- <a
+                  href="/downloads/clipsync-1.0.0.x86_64.rpm"
+                  class="download-btn"
+                  download
+                  aria-label="Download ClipSync RPM package for Fedora/RHEL"
+                >
+                  .rpm
+                </a> -->
+              </div>
+              <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8">
+                Version 1.0.0 • Updated January 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Quick Start Guide -->
+          <div
+            style="
+              margin-top: 4rem;
+              background: rgba(255, 255, 255, 0.1);
+              padding: 2rem;
+              border-radius: 15px;
+              backdrop-filter: blur(10px);
+            "
+          >
+            <h3
+              style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem"
+            >
+              🚀 Quick Start Guide
+            </h3>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                text-align: center;
+              "
+            >
+              <div>
+                <div style="font-size: 2rem; margin-bottom: 1rem">1️⃣</div>
+                <h4 style="margin-bottom: 0.5rem">Download & Install</h4>
+                <p style="opacity: 0.8; font-size: 0.9rem">
+                  Choose your platform and download ClipSync
+                </p>
+              </div>
+              <div>
+                <div style="font-size: 2rem; margin-bottom: 1rem">2️⃣</div>
+                <h4 style="margin-bottom: 0.5rem">Launch ClipSync</h4>
+                <p style="opacity: 0.8; font-size: 0.9rem">
+                  Start the app and it runs in your system tray
+                </p>
+              </div>
+              <div>
+                <div style="font-size: 2rem; margin-bottom: 1rem">3️⃣</div>
+                <h4 style="margin-bottom: 0.5rem">Copy Anything</h4>
+                <p style="opacity: 0.8; font-size: 0.9rem">
+                  Copy text, images, files - everything is saved automatically
+                </p>
+              </div>
+              <div>
+                <div style="font-size: 2rem; margin-bottom: 1rem">4️⃣</div>
+                <h4 style="margin-bottom: 0.5rem">Press Ctrl+Shift+V</h4>
+                <p style="opacity: 0.8; font-size: 0.9rem">
+                  Access your clipboard history instantly
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="support">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ClipSync</h3>
+            <p>
+              The ultimate clipboard manager for macOS and Linux. Boost your
+              productivity with seamless clipboard management.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="/docs">Documentation</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact Support</a></li>
+              <li><a href="/changelog">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://twitter.com/clipsync">Twitter</a></li>
+              <li><a href="https://github.com/clipsync">GitHub</a></li>
+              <li><a href="mailto:hello@clipsync.app">Email</a></li>
+              <li><a href="/newsletter">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ClipSync. All rights reserved. Made with ❤️ for
+            productivity enthusiasts.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- OS Detection Script -->
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Support & Help - ClipSync Clipboard Manager | Get Help & Contact Us
+    </title>
+    <meta
+      name="description"
+      content="Get support for ClipSync clipboard manager for Windows, macOS and Linux. Find answers to common questions about global hotkeys, Windows 11 UI, privacy features, keyboard shortcuts, and troubleshooting."
+    />
+    <meta
+      name="keywords"
+      content="ClipSync support, clipboard manager help, Windows 11 UI, global hotkeys, keyboard shortcuts, privacy features, technical support, contact, FAQ, troubleshooting"
+    />
+    <meta name="author" content="ClipSync" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Support & Help - ClipSync Clipboard Manager"
+    />
+    <meta
+      property="og:description"
+      content="Get support for ClipSync clipboard manager for Windows, macOS and Linux. Find answers about features, shortcuts, and troubleshooting."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clipsync.app/support" />
+    <meta
+      property="og:image"
+      content="https://clipsync.app/images/clipsync-support-og.jpg"
+    />
+    <meta property="og:site_name" content="ClipSync" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Support & Help - ClipSync" />
+    <meta
+      name="twitter:description"
+      content="Get support for ClipSync clipboard manager. Find help with features, shortcuts, and troubleshooting."
+    />
+    <meta
+      name="twitter:image"
+      content="https://clipsync.app/images/clipsync-support-twitter.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clipsync.app/support" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "ClipSync Support",
+        "description": "Get support and help for ClipSync clipboard manager application",
+        "url": "https://clipsync.app/support",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "ClipSync",
+          "email": "smahadalichowdhury@gmail.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "smahadalichowdhury@gmail.com"
+          }
+        }
+      }
+    </script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .nav-links a:hover {
+        opacity: 0.8;
+      }
+
+      .nav-links a.active {
+        border-bottom: 2px solid white;
+        padding-bottom: 2px;
+      }
+
+      /* Page Header */
+      .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #f8f9fa;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .breadcrumb nav {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .breadcrumb span {
+        color: #6c757d;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 3rem 0;
+      }
+
+      .support-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 0.5rem;
+      }
+
+      .faq-item {
+        margin-bottom: 1.5rem;
+        border: 1px solid #e9ecef;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        background: #f8f9fa;
+        padding: 1rem 1.5rem;
+        font-weight: 600;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        position: relative;
+      }
+
+      .faq-question:hover {
+        background: #e9ecef;
+      }
+
+      .faq-question::after {
+        content: '+';
+        position: absolute;
+        right: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #667eea;
+      }
+
+      .faq-answer {
+        padding: 1.5rem;
+        background: white;
+        color: #666;
+        line-height: 1.6;
+      }
+
+      .faq-answer ul {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+      }
+
+      .faq-answer li {
+        margin-bottom: 0.3rem;
+      }
+
+      /* Contact Section */
+      .contact-section {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .contact-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+
+      .contact-methods {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .contact-method {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+
+      .contact-method:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+      }
+
+      .contact-info {
+        text-align: left;
+        flex: 1;
+      }
+
+      .contact-info h3 {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        color: #333;
+      }
+
+      .contact-info p {
+        color: #666;
+        font-size: 0.9rem;
+      }
+
+      .contact-info a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      /* Support Section */
+      .support-me-section {
+        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+        color: white;
+        border-radius: 15px;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .support-me-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+
+      .support-me-section p {
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+
+      .coffee-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        font-size: 1.1rem;
+      }
+
+      .coffee-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Quick Links */
+      .quick-links {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 2rem;
+      }
+
+      .quick-links h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: #333;
+      }
+
+      .quick-links-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .quick-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s;
+      }
+
+      .quick-link:hover {
+        background: #e9ecef;
+        transform: translateX(5px);
+      }
+
+      .quick-link-icon {
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.9rem;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        padding: 3rem 0 1rem;
+        margin-top: 3rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+        text-align: center;
+        color: #ccc;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .support-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .contact-method {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .contact-info {
+          text-align: center;
+        }
+      }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* Focus styles for accessibility */
+      .coffee-btn:focus,
+      .nav-links a:focus,
+      .quick-link:focus {
+        outline: 2px solid #ff6b6b;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">ClipSync</a>
+        <ul class="nav-links">
+          <!-- <li><a href="screenshots.html">Screenshots</a></li> -->
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Support & Help</h1>
+        <p>
+          Get the help you need with ClipSync. Find answers to common questions
+          or reach out to our team directly.
+        </p>
+      </div>
+    </section>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Support</span>
+        </nav>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="support-grid">
+          <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I install ClipSync on Windows?
+              </div>
+              <div class="faq-answer">
+                <p>Installing ClipSync on Windows is simple:</p>
+                <ul>
+                  <li>
+                    Download the ClipSync-Setup-1.0.0.exe installer from our
+                    download page
+                  </li>
+                  <li>
+                    Right-click the installer and select "Run as administrator"
+                  </li>
+                  <li>Follow the installation wizard</li>
+                  <li>
+                    Launch ClipSync from the Start menu or desktop shortcut
+                  </li>
+                  <li>Grant necessary permissions when prompted</li>
+                  <li>ClipSync will appear in your system tray</li>
+                </ul>
+                <p>
+                  <strong>Alternative:</strong> Download the portable version
+                  (ClipSync-1.0.0-portable.exe) for no-install usage.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I install ClipSync on macOS?
+              </div>
+              <div class="faq-answer">
+                <p>Installing ClipSync on macOS:</p>
+                <ul>
+                  <li>
+                    Download the ClipSync-1.0.0.dmg file (Universal or ARM64 for
+                    Apple Silicon)
+                  </li>
+                  <li>
+                    Double-click the downloaded file to mount the disk image
+                  </li>
+                  <li>Drag ClipSync to your Applications folder</li>
+                  <li>Launch ClipSync from Applications or Spotlight</li>
+                  <li>
+                    Grant accessibility permissions in System Preferences >
+                    Security & Privacy
+                  </li>
+                  <li>ClipSync will appear in your menu bar</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I install ClipSync on Linux?
+              </div>
+              <div class="faq-answer">
+                <p><strong>AppImage (Universal):</strong></p>
+                <ul>
+                  <li>Download ClipSync-1.0.0.AppImage</li>
+                  <li>
+                    Make it executable:
+                    <code>chmod +x ClipSync-1.0.0.AppImage</code>
+                  </li>
+                  <li>Run: <code>./ClipSync-1.0.0.AppImage</code></li>
+                </ul>
+                <p><strong>Ubuntu/Debian (.deb):</strong></p>
+                <ul>
+                  <li>Download clipsync_1.0.0_amd64.deb</li>
+                  <li>
+                    Install: <code>sudo dpkg -i clipsync_1.0.0_amd64.deb</code>
+                  </li>
+                  <li>
+                    Fix dependencies if needed:
+                    <code>sudo apt-get install -f</code>
+                  </li>
+                </ul>
+                <p><strong>Fedora/RHEL (.rpm):</strong></p>
+                <ul>
+                  <li>Download clipsync-1.0.0.x86_64.rpm</li>
+                  <li>
+                    Install: <code>sudo rpm -i clipsync-1.0.0.x86_64.rpm</code>
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                What are the main keyboard shortcuts?
+              </div>
+              <div class="faq-answer">
+                <p><strong>Main Actions:</strong></p>
+                <ul>
+                  <li>
+                    <strong>Ctrl/Cmd + Shift + V:</strong> Show/Hide ClipSync
+                    window
+                  </li>
+                  <li>
+                    <strong>Ctrl/Cmd + Shift + C:</strong> Clear clipboard
+                    history
+                  </li>
+                  <li>
+                    <strong>Ctrl/Cmd + Shift + P:</strong> Pin current clipboard
+                    item
+                  </li>
+                  <li><strong>Ctrl/Cmd + ,:</strong> Open Settings</li>
+                </ul>
+                <p><strong>Navigation:</strong></p>
+                <ul>
+                  <li><strong>↑/↓:</strong> Navigate clipboard items</li>
+                  <li><strong>Enter:</strong> Paste selected item</li>
+                  <li><strong>Delete:</strong> Remove selected item</li>
+                  <li><strong>Escape:</strong> Hide window</li>
+                </ul>
+                <p><strong>Search & Filter:</strong></p>
+                <ul>
+                  <li><strong>Ctrl/Cmd + F:</strong> Focus search box</li>
+                  <li>
+                    <strong>Ctrl/Cmd + 1-5:</strong> Filter by content type
+                  </li>
+                  <li>
+                    <strong>Ctrl/Cmd + Shift + F:</strong> Advanced search
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                What file formats does ClipSync support?
+              </div>
+              <div class="faq-answer">
+                <p>
+                  ClipSync supports multiple formats with intelligent
+                  auto-detection:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Text:</strong> Plain text, rich text, code snippets
+                  </li>
+                  <li>
+                    <strong>Images:</strong> PNG, JPEG, GIF, BMP, TIFF, WebP
+                  </li>
+                  <li>
+                    <strong>Files:</strong> File paths and file references
+                  </li>
+                  <li>
+                    <strong>URLs:</strong> Web links with automatic preview
+                  </li>
+                  <li><strong>HTML:</strong> Formatted web content</li>
+                  <li><strong>RTF:</strong> Rich Text Format documents</li>
+                  <li>
+                    <strong>Code:</strong> Programming languages with syntax
+                    detection
+                  </li>
+                </ul>
+                <p>All formats are automatically categorized and searchable.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How does ClipSync protect my privacy?
+              </div>
+              <div class="faq-answer">
+                <p>
+                  ClipSync prioritizes your privacy with multiple security
+                  features:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Local Storage Only:</strong> No cloud sync, all data
+                    stays on your device
+                  </li>
+                  <li>
+                    <strong>Excluded Apps:</strong> Configure apps to exclude
+                    from monitoring (passwords, banking)
+                  </li>
+                  <li>
+                    <strong>Incognito Mode:</strong> Temporarily disable
+                    clipboard monitoring
+                  </li>
+                  <li>
+                    <strong>Auto-Cleanup:</strong> Automatically remove old
+                    entries (configurable 40-1000 items)
+                  </li>
+                  <li>
+                    <strong>Optional Encryption:</strong> Encrypt sensitive
+                    clipboard data
+                  </li>
+                  <li>
+                    <strong>No Telemetry:</strong> No data collection or
+                    tracking
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I customize the Windows 11-inspired UI?
+              </div>
+              <div class="faq-answer">
+                <p>ClipSync offers extensive UI customization:</p>
+                <ul>
+                  <li>
+                    <strong>Themes:</strong> Light, Dark, or Auto (follows
+                    system)
+                  </li>
+                  <li>
+                    <strong>Grid Layout:</strong> 2-6 columns responsive layout
+                  </li>
+                  <li>
+                    <strong>Acrylic Effects:</strong> Enable/disable blur
+                    effects
+                  </li>
+                  <li>
+                    <strong>Animations:</strong> Customize transition speeds
+                  </li>
+                  <li>
+                    <strong>Font Size:</strong> Adjust text size for
+                    accessibility
+                  </li>
+                  <li>
+                    <strong>Color Accents:</strong> Choose from multiple accent
+                    colors
+                  </li>
+                </ul>
+                <p>Access these options in Settings > Appearance.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I search and filter clipboard items?
+              </div>
+              <div class="faq-answer">
+                <p>ClipSync offers powerful search capabilities:</p>
+                <ul>
+                  <li>
+                    <strong>Instant Search:</strong> Type to search with fuzzy
+                    matching
+                  </li>
+                  <li>
+                    <strong>Content Filters:</strong> Filter by Text, Images,
+                    Files, URLs, Code
+                  </li>
+                  <li>
+                    <strong>Date Filters:</strong> Today, This Week, This Month,
+                    Custom range
+                  </li>
+                  <li>
+                    <strong>Source App Filter:</strong> Filter by originating
+                    application
+                  </li>
+                  <li>
+                    <strong>Regex Search:</strong> Advanced pattern matching
+                  </li>
+                  <li>
+                    <strong>Pinned Items:</strong> Quick access to favorites
+                  </li>
+                </ul>
+                <p>Use Ctrl/Cmd + F to focus the search box instantly.</p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I export/import my clipboard history?
+              </div>
+              <div class="faq-answer">
+                <p><strong>Export:</strong></p>
+                <ul>
+                  <li>Go to Settings > Data Management</li>
+                  <li>Click "Export History"</li>
+                  <li>Choose format: JSON, CSV, or Plain Text</li>
+                  <li>Select date range and content types</li>
+                  <li>Save to your preferred location</li>
+                </ul>
+                <p><strong>Import:</strong></p>
+                <ul>
+                  <li>Go to Settings > Data Management</li>
+                  <li>Click "Import History"</li>
+                  <li>Select your exported file</li>
+                  <li>Choose merge or replace options</li>
+                  <li>Confirm import</li>
+                </ul>
+                <p>
+                  Keyboard shortcut: Ctrl/Cmd + E (export), Ctrl/Cmd + I
+                  (import)
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                ClipSync isn't capturing clipboard changes. What should I do?
+              </div>
+              <div class="faq-answer">
+                <p><strong>Windows:</strong></p>
+                <ul>
+                  <li>Run ClipSync as administrator</li>
+                  <li>Check Windows Defender exclusions</li>
+                  <li>Verify .NET Framework 4.8 is installed</li>
+                  <li>Restart the ClipSync service</li>
+                </ul>
+                <p><strong>macOS:</strong></p>
+                <ul>
+                  <li>
+                    Grant Accessibility permissions in System Preferences >
+                    Security & Privacy
+                  </li>
+                  <li>Add ClipSync to "Input Monitoring" if on macOS 10.15+</li>
+                  <li>Restart ClipSync after granting permissions</li>
+                </ul>
+                <p><strong>Linux:</strong></p>
+                <ul>
+                  <li>Ensure X11 or Wayland clipboard access</li>
+                  <li>Install required dependencies: xclip or wl-clipboard</li>
+                  <li>Check if running in a sandboxed environment</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I configure auto-start on system boot?
+              </div>
+              <div class="faq-answer">
+                <p><strong>Windows:</strong></p>
+                <ul>
+                  <li>Go to Settings > General</li>
+                  <li>Enable "Start with Windows"</li>
+                  <li>
+                    Or manually add to Startup folder: Win+R, type
+                    "shell:startup"
+                  </li>
+                </ul>
+                <p><strong>macOS:</strong></p>
+                <ul>
+                  <li>
+                    Go to System Preferences > Users & Groups > Login Items
+                  </li>
+                  <li>Add ClipSync to the list</li>
+                  <li>Or enable in ClipSync Settings > General</li>
+                </ul>
+                <p><strong>Linux:</strong></p>
+                <ul>
+                  <li>Add to your desktop environment's autostart</li>
+                  <li>Or create ~/.config/autostart/clipsync.desktop</li>
+                  <li>Enable in ClipSync Settings > General</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <div class="faq-question">
+                How do I update ClipSync to the latest version?
+              </div>
+              <div class="faq-answer">
+                <p>ClipSync includes automatic update checking:</p>
+                <ul>
+                  <li>
+                    <strong>Automatic:</strong> Enable "Check for updates" in
+                    Settings
+                  </li>
+                  <li>
+                    <strong>Manual:</strong> Go to Help > Check for Updates
+                  </li>
+                  <li>
+                    <strong>Download:</strong> Visit our website for the latest
+                    version
+                  </li>
+                </ul>
+                <p>
+                  Your settings and clipboard history are preserved during
+                  updates.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <aside>
+            <div class="contact-section">
+              <h2>Need More Help?</h2>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-info">
+                    <h3>Email Support</h3>
+                    <p>
+                      <a href="mailto:smahadalichowdhury@gmail.com"
+                        >smahadalichowdhury@gmail.com</a
+                      >
+                    </p>
+                    <p>We typically respond within 24 hours</p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">💬</div>
+                  <div class="contact-info">
+                    <h3>Community</h3>
+                    <p>
+                      <a
+                        href="https://github.com/ahadalichowdhury/ClipSync-app/discussions"
+                        >GitHub Discussions</a
+                      >
+                    </p>
+                    <p>Join our community for tips and help</p>
+                  </div>
+                </div>
+
+                <div class="contact-method">
+                  <div class="contact-icon">🐛</div>
+                  <div class="contact-info">
+                    <h3>Bug Reports</h3>
+                    <p>
+                      <a
+                        href="https://github.com/ahadalichowdhury/ClipSync-app/issues"
+                        >GitHub Issues</a
+                      >
+                    </p>
+                    <p>Report bugs and request features</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="support-me-section">
+              <h2>☕ Support Development</h2>
+              <p>
+                Love ClipSync? Help support continued development and new
+                features by buying me a coffee! Your support means the world to
+                me and helps keep ClipSync free and awesome.
+              </p>
+              <a
+                href="https://buymeacoffee.com/clipsync"
+                class="coffee-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Buy me a coffee to support ClipSync development"
+              >
+                ☕ Buy me a coffee
+              </a>
+              <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8">
+                Every contribution helps improve ClipSync for everyone!
+              </p>
+            </div>
+
+            <div class="quick-links">
+              <h2>Quick Links</h2>
+              <div class="quick-links-grid">
+                <a href="/docs" class="quick-link">
+                  <div class="quick-link-icon">📖</div>
+                  <span>Documentation</span>
+                </a>
+                <a href="/changelog" class="quick-link">
+                  <div class="quick-link-icon">📝</div>
+                  <span>Changelog</span>
+                </a>
+                <a href="index.html#download" class="quick-link">
+                  <div class="quick-link-icon">⬇️</div>
+                  <span>Download</span>
+                </a>
+                <a href="https://twitter.com/clipsync" class="quick-link">
+                  <div class="quick-link-icon">🐦</div>
+                  <span>Follow Updates</span>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ClipSync</h3>
+            <p>
+              The ultimate clipboard manager for macOS and Linux. Boost your
+              productivity with seamless clipboard management.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="/docs">Documentation</a></li>
+              <li><a href="support.html">FAQ</a></li>
+              <li>
+                <a href="mailto:smahadalichowdhury@gmail.com"
+                  >Contact Support</a
+                >
+              </li>
+              <li><a href="/changelog">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://twitter.com/clipsync">Twitter</a></li>
+              <li><a href="https://github.com/clipsync">GitHub</a></li>
+              <li><a href="mailto:smahadalichowdhury@gmail.com">Email</a></li>
+              <li><a href="/newsletter">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ClipSync. All rights reserved. Made with ❤️ for
+            productivity enthusiasts.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

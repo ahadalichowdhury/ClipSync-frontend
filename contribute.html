@@ -1,0 +1,1020 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Contribute to ClipSync - Open Source Clipboard Manager | Join the Project
+    </title>
+    <meta
+      name="description"
+      content="Contribute to ClipSync, an open source clipboard manager for Windows, macOS and Linux. Learn how to submit code, report bugs, keyboard shortcuts, privacy features, and improve the project."
+    />
+    <meta
+      name="keywords"
+      content="ClipSync contribute, open source project, GitHub contribution, clipboard manager development, React TypeScript, Electron development, code contribution"
+    />
+    <meta name="author" content="ClipSync" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Contribute to ClipSync - Open Source Clipboard Manager"
+    />
+    <meta
+      property="og:description"
+      content="Contribute to ClipSync, an open source clipboard manager for Windows, macOS and Linux. Help improve keyboard shortcuts, privacy features, and more."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clipsync.app/contribute" />
+    <meta
+      property="og:image"
+      content="https://clipsync.app/images/clipsync-contribute-og.jpg"
+    />
+    <meta property="og:site_name" content="ClipSync" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contribute to ClipSync" />
+    <meta
+      name="twitter:description"
+      content="Join the open source development of ClipSync clipboard manager for Windows, macOS and Linux."
+    />
+    <meta
+      name="twitter:image"
+      content="https://clipsync.app/images/clipsync-contribute-twitter.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clipsync.app/contribute" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .nav-links a:hover {
+        opacity: 0.8;
+      }
+
+      .nav-links a.active {
+        border-bottom: 2px solid white;
+        padding-bottom: 2px;
+      }
+
+      /* Page Header */
+      .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #f8f9fa;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .breadcrumb nav {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .breadcrumb span {
+        color: #6c757d;
+      }
+
+      /* Main Content */
+      .main-content {
+        padding: 3rem 0;
+      }
+
+      /* GitHub Stats */
+      .github-stats {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+
+      .github-stats h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .stat-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .stat-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #667eea;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        color: #666;
+        font-size: 1rem;
+      }
+
+      .github-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #333;
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 2rem;
+        transition: all 0.3s;
+      }
+
+      .github-button:hover {
+        background: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Ways to Contribute */
+      .ways-to-contribute {
+        margin-bottom: 3rem;
+      }
+
+      .ways-to-contribute h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+        text-align: center;
+      }
+
+      .contribute-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .contribute-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        border-top: 5px solid #667eea;
+      }
+
+      .contribute-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .contribute-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .contribute-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+        text-align: center;
+      }
+
+      .contribute-card p {
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
+
+      .contribute-card ul {
+        list-style-position: inside;
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
+
+      .contribute-card ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .contribute-link {
+        display: inline-block;
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+
+      .contribute-link:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+
+      /* Tech Stack */
+      .tech-stack {
+        background: #f8f9fa;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .tech-stack h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+        text-align: center;
+      }
+
+      .tech-stack p {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #666;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .tech-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        text-align: center;
+      }
+
+      .tech-item {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .tech-item:hover {
+        transform: translateY(-5px);
+      }
+
+      .tech-icon {
+        width: 50px;
+        height: 50px;
+        background: #f0f0f0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .tech-name {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .tech-desc {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      /* Development Setup */
+      .dev-setup {
+        margin-bottom: 3rem;
+      }
+
+      .dev-setup h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+        text-align: center;
+      }
+
+      .setup-steps {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .setup-step {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .setup-step:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      .step-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: #667eea;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 1rem;
+        font-weight: 600;
+      }
+
+      .setup-step h3 {
+        display: inline-block;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #333;
+      }
+
+      .setup-step p {
+        color: #666;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+      }
+
+      .code-block {
+        background: #f8f9fa;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 2.5rem;
+        font-family: monospace;
+        overflow-x: auto;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+        text-align: center;
+        color: #ccc;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .contribute-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .tech-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* Focus styles for accessibility */
+      .github-button:focus,
+      .nav-links a:focus,
+      .contribute-link:focus {
+        outline: 2px solid #ff6b6b;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">ClipSync</a>
+        <ul class="nav-links">
+          <!-- <li><a href="screenshots.html">Screenshots</a></li> -->
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>Contribute to ClipSync</h1>
+        <p>
+          ClipSync is an open source project and welcomes contributions from
+          developers of all skill levels. Help us make the best clipboard
+          manager for Windows, macOS, and Linux!
+        </p>
+      </div>
+    </section>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Contribute</span>
+        </nav>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <div class="container">
+        <section class="github-stats">
+          <h2>GitHub Project Stats</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">★ 1.2k</div>
+              <div class="stat-label">GitHub Stars</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">243</div>
+              <div class="stat-label">Forks</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">42</div>
+              <div class="stat-label">Contributors</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">18</div>
+              <div class="stat-label">Open Issues</div>
+            </div>
+          </div>
+          <a
+            href="https://github.com/ahadalichowdhury/ClipSync-app"
+            class="github-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="white"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+            View on GitHub
+          </a>
+        </section>
+
+        <section class="ways-to-contribute">
+          <h2>Ways to Contribute</h2>
+          <div class="contribute-grid">
+            <article class="contribute-card">
+              <div class="contribute-icon">💻</div>
+              <h3>Code Contributions</h3>
+              <p>
+                Help improve ClipSync by submitting code changes. We welcome
+                contributions of all sizes:
+              </p>
+              <ul>
+                
+                <li>Keyboard shortcuts and accessibility features</li>
+                <li>Privacy and security enhancements</li>
+                <li>Multi-format clipboard support</li>
+                <li>Search and filtering capabilities</li>
+                <li>Performance optimizations</li>
+                <li>Cross-platform compatibility fixes</li>
+              </ul>
+              <p>
+                Check our
+                <a
+                  href="https://github.com/ahadalichowdhury/ClipSync/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22"
+                  class="contribute-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >good first issues</a
+                >
+                to get started.
+              </p>
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">🐛</div>
+              <h3>Bug Reports</h3>
+              <p>Found a bug? Help us improve by reporting it:</p>
+              <ul>
+                <li>Check if the issue already exists</li>
+                <li>Include detailed steps to reproduce</li>
+                <li>Mention your OS (Windows/macOS/Linux) and version</li>
+                <li>Specify ClipSync version (found in Settings > About)</li>
+                <li>Add screenshots or screen recordings if applicable</li>
+                <li>Include clipboard content types that cause issues</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/issues/new?template=bug_report.md"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Report a Bug</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">💡</div>
+              <h3>Feature Requests</h3>
+              <p>Have an idea for a new feature? We'd love to hear it:</p>
+              <ul>
+                <li>New clipboard content types support</li>
+                <li>Advanced search and filtering options</li>
+                <li>UI/UX improvements and themes</li>
+                <li>Productivity workflow enhancements</li>
+                <li>Integration with other apps</li>
+                <li>Accessibility improvements</li>
+                <li>Plugin system extensions</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/issues/new?template=feature_request.md"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Request a Feature</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">📚</div>
+              <h3>Documentation</h3>
+              <p>Help improve our documentation:</p>
+              <ul>
+                <li>Update installation guides for all platforms</li>
+                <li>Improve keyboard shortcuts documentation</li>
+                <li>Add troubleshooting guides</li>
+                <li>Create video tutorials</li>
+                <li>Document privacy and security features</li>
+                <li>Write developer guides</li>
+                <li>Fix typos and improve clarity</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/tree/main/docs"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Improve Documentation</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">🌐</div>
+              <h3>Translations</h3>
+              <p>Help make ClipSync available in more languages:</p>
+              <ul>
+                <li>Translate the user interface</li>
+                <li>Localize keyboard shortcuts</li>
+                <li>Translate error messages and tooltips</li>
+                <li>Review existing translations</li>
+                <li>Keep translations up to date</li>
+                <li>Add right-to-left language support</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/blob/main/docs/TRANSLATIONS.md"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Help with Translations</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">🧪</div>
+              <h3>Testing</h3>
+              <p>Help ensure ClipSync works well across all platforms:</p>
+              <ul>
+                <li>Test on Windows 10/11 with different configurations</li>
+                <li>Test on macOS (Intel and Apple Silicon)</li>
+                <li>Test on various Linux distributions</li>
+                <li>Verify keyboard shortcuts work correctly</li>
+                <li>Test clipboard content types and formats</li>
+                <li>Performance testing with large clipboard histories</li>
+                <li>Accessibility testing with screen readers</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/blob/main/docs/TESTING.md"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn About Testing</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">🎨</div>
+              <h3>Design & UX</h3>
+              <p>Help improve ClipSync's user experience:</p>
+              <ul>
+                <li>Design new Windows 11-inspired UI components</li>
+                <li>Create app icons and visual assets</li>
+                <li>Improve accessibility and usability</li>
+                <li>Design new themes and color schemes</li>
+                <li>Create mockups for new features</li>
+                <li>Optimize layouts for different screen sizes</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/discussions"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Share Design Ideas</a
+              >
+            </article>
+
+            <article class="contribute-card">
+              <div class="contribute-icon">🔒</div>
+              <h3>Security & Privacy</h3>
+              <p>Help make ClipSync more secure and privacy-focused:</p>
+              <ul>
+                <li>Review security implementations</li>
+                <li>Improve data encryption features</li>
+                <li>Enhance excluded apps functionality</li>
+                <li>Audit privacy features</li>
+                <li>Test incognito mode</li>
+                <li>Improve auto-cleanup mechanisms</li>
+              </ul>
+              <a
+                href="https://github.com/ahadalichowdhury/ClipSync/security"
+                class="contribute-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Security Guidelines</a
+              >
+            </article>
+          </div>
+        </section>
+
+        <section class="tech-stack">
+          <h2>Our Tech Stack</h2>
+          <p>
+            ClipSync is built using modern technologies that make it efficient,
+            cross-platform, and maintainable. Familiarity with these
+            technologies will help you contribute effectively.
+          </p>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-icon">⚛️</div>
+              <div class="tech-name">React 18</div>
+              <div class="tech-desc">
+                Modern UI components with hooks and TypeScript
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🔷</div>
+              <div class="tech-name">TypeScript</div>
+              <div class="tech-desc">Type-safe development and better DX</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">⚡</div>
+              <div class="tech-name">Electron 36</div>
+              <div class="tech-desc">Cross-platform desktop framework</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🎨</div>
+              <div class="tech-name">Tailwind CSS</div>
+              <div class="tech-desc">Windows 11-inspired UI styling</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">📦</div>
+              <div class="tech-name">SQLite</div>
+              <div class="tech-desc">Local clipboard history storage</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🐻</div>
+              <div class="tech-name">Zustand</div>
+              <div class="tech-desc">Lightweight state management</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🧪</div>
+              <div class="tech-name">Jest & RTL</div>
+              <div class="tech-desc">Testing framework and utilities</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">⚙️</div>
+              <div class="tech-name">Electron Vite</div>
+              <div class="tech-desc">
+                Fast build tool and development server
+              </div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🎭</div>
+              <div class="tech-name">Framer Motion</div>
+              <div class="tech-desc">Smooth animations and transitions</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🔧</div>
+              <div class="tech-name">Node.js 18+</div>
+              <div class="tech-desc">Runtime environment and tooling</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">📱</div>
+              <div class="tech-name">Lucide React</div>
+              <div class="tech-desc">Beautiful icon library</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-icon">🏗️</div>
+              <div class="tech-name">Electron Builder</div>
+              <div class="tech-desc">Multi-platform app packaging</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="dev-setup">
+          <h2>Development Setup</h2>
+          <div class="setup-steps">
+            <div class="setup-step">
+              <span class="step-number">1</span>
+              <h3>Prerequisites</h3>
+              <p>Make sure you have the required tools installed:</p>
+              <div class="code-block">
+                # Node.js 18 or higher<br />
+                node --version<br />
+                npm --version<br /><br />
+                # Git for version control<br />
+                git --version
+              </div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">2</span>
+              <h3>Fork and Clone the Repository</h3>
+              <p>
+                Start by forking the ClipSync repository on GitHub, then clone
+                your fork locally:
+              </p>
+              <div class="code-block">
+                git clone https://github.com/YOUR-USERNAME/ClipSync.git<br />
+                cd ClipSync<br />
+                git remote add upstream
+                https://github.com/ahadalichowdhury/ClipSync.git
+              </div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">3</span>
+              <h3>Install Dependencies</h3>
+              <p>Install all project dependencies using npm:</p>
+              <div class="code-block">npm install</div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">4</span>
+              <h3>Start Development Server</h3>
+              <p>Run the development server to start working on ClipSync:</p>
+              <div class="code-block">
+                # Start development mode<br />
+                npm run dev<br /><br />
+                # Run tests<br />
+                npm test<br /><br />
+                # Run linting<br />
+                npm run lint
+              </div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">5</span>
+              <h3>Project Structure</h3>
+              <p>Familiarize yourself with the project structure:</p>
+              <div class="code-block">
+                ClipSync/<br />
+                ├── src/<br />
+                │ ├── main/ # Electron main process<br />
+                │ ├── renderer/ # React frontend<br />
+                │ ├── preload/ # Preload scripts<br />
+                │ └── shared/ # Shared types and utilities<br />
+                ├── assets/ # Icons and resources<br />
+                ├── docs/ # Documentation<br />
+                ├── tests/ # Test files<br />
+                └── scripts/ # Build and utility scripts
+              </div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">6</span>
+              <h3>Make Your Changes</h3>
+              <p>Create a new branch for your feature or bug fix:</p>
+              <div class="code-block">
+                git checkout -b feature/your-feature-name<br />
+                # Make your changes<br />
+                git add .<br />
+                git commit -m "Add your descriptive commit message"<br />
+                git push origin feature/your-feature-name
+              </div>
+            </div>
+
+            <div class="setup-step">
+              <span class="step-number">7</span>
+              <h3>Submit a Pull Request</h3>
+              <p>Once your changes are ready, submit a pull request:</p>
+              <ul style="margin-left: 2.5rem">
+                <li>Go to your fork on GitHub</li>
+                <li>Click "New Pull Request"</li>
+                <li>Provide a clear title and description</li>
+                <li>Reference any related issues</li>
+                <li>Wait for review and feedback</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ClipSync</h3>
+            <p>
+              The ultimate clipboard manager for Windows, macOS, and Linux.
+              Boost your productivity with seamless clipboard management.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="/docs">Documentation</a></li>
+              <li><a href="support.html">FAQ</a></li>
+              <li>
+                <a href="mailto:smahadalichowdhury@gmail.com"
+                  >Contact Support</a
+                >
+              </li>
+              <li><a href="/changelog">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://twitter.com/clipsync">Twitter</a></li>
+              <li><a href="https://x.com/clipsync">X</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

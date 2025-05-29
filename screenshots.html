@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      ClipSync Screenshots - See the Clipboard Manager in Action | Visual Tour
+    </title>
+    <meta
+      name="description"
+      content="View screenshots of ClipSync clipboard manager for macOS and Linux. See the interface, features, and functionality before downloading."
+    />
+    <meta
+      name="keywords"
+      content="ClipSync screenshots, clipboard manager interface, macOS clipboard app, Linux clipboard tool, ClipSync gallery"
+    />
+    <meta name="author" content="ClipSync" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="ClipSync Screenshots - See the Clipboard Manager in Action"
+    />
+    <meta
+      property="og:description"
+      content="View screenshots of ClipSync clipboard manager for macOS and Linux. See the interface, features, and functionality."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clipsync.app/screenshots" />
+    <meta
+      property="og:image"
+      content="https://clipsync.app/images/clipsync-screenshots-og.jpg"
+    />
+    <meta property="og:site_name" content="ClipSync" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClipSync Screenshots" />
+    <meta
+      name="twitter:description"
+      content="View screenshots of ClipSync clipboard manager for macOS and Linux."
+    />
+    <meta
+      name="twitter:image"
+      content="https://clipsync.app/images/clipsync-screenshots-twitter.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clipsync.app/screenshots" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #ffffff;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Header */
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      .nav-links a:hover {
+        opacity: 0.8;
+      }
+
+      .nav-links a.active {
+        border-bottom: 2px solid white;
+        padding-bottom: 2px;
+      }
+
+      /* Page Header */
+      .page-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      .page-header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #f8f9fa;
+        padding: 1rem 0;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .breadcrumb nav {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      .breadcrumb a {
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .breadcrumb span {
+        color: #6c757d;
+      }
+
+      /* Platform Tabs */
+      .platform-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .platform-tab {
+        padding: 0.8rem 2rem;
+        background: #f8f9fa;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s;
+        border: 2px solid transparent;
+      }
+
+      .platform-tab.active {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .platform-tab:hover:not(.active) {
+        background: #e9ecef;
+      }
+
+      /* Screenshots Gallery */
+      .screenshots-gallery {
+        padding: 2rem 0 4rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .screenshot-item {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .screenshot-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .screenshot-img {
+        width: 100%;
+        height: 300px;
+        background: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 1.2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .screenshot-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s;
+      }
+
+      .screenshot-item:hover .screenshot-img img {
+        transform: scale(1.05);
+      }
+
+      .screenshot-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .screenshot-item:hover .screenshot-overlay {
+        opacity: 1;
+      }
+
+      .view-full {
+        background: white;
+        color: #333;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .view-full:hover {
+        background: #f8f9fa;
+        transform: scale(1.05);
+      }
+
+      .screenshot-info {
+        padding: 1.5rem;
+      }
+
+      .screenshot-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+
+      .screenshot-info p {
+        color: #666;
+        font-size: 0.95rem;
+      }
+
+      .platform-badge {
+        display: inline-block;
+        padding: 0.2rem 0.8rem;
+        background: #f0f0f0;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        font-weight: 500;
+      }
+
+      .platform-badge.macos {
+        background: #e9f5ff;
+        color: #0077e6;
+      }
+
+      .platform-badge.linux {
+        background: #fff0e9;
+        color: #e67300;
+      }
+
+      .platform-badge.both {
+        background: #f0e9ff;
+        color: #7300e6;
+      }
+
+      /* Download CTA */
+      .download-cta {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .download-cta h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .download-cta p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .download-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: 600;
+        transition: all 0.3s;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .download-btn:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .download-btn.primary {
+        background: #ff6b6b;
+        border-color: #ff6b6b;
+      }
+
+      .download-btn.primary:hover {
+        background: #ff5252;
+        border-color: #ff5252;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        padding: 3rem 0 1rem;
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .footer-section ul li a:hover {
+        color: #fff;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #555;
+        padding-top: 1rem;
+        text-align: center;
+        color: #ccc;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 2.5rem;
+        }
+
+        .gallery-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .download-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      /* Lightbox */
+      .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: 2rem;
+      }
+
+      .lightbox.active {
+        display: flex;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+      }
+
+      .lightbox-img {
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .lightbox-caption {
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+      }
+
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      /* Focus styles for accessibility */
+      .download-btn:focus,
+      .nav-links a:focus,
+      .platform-tab:focus,
+      .view-full:focus {
+        outline: 2px solid #ff6b6b;
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">ClipSync</a>
+        <ul class="nav-links">
+          <!-- <li><a href="screenshots.html">Screenshots</a></li> -->
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contribute.html">Contribute</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1>ClipSync Screenshots</h1>
+        <p>
+          See ClipSync in action with these screenshots showcasing the interface
+          and features on both macOS and Linux platforms. Experience the power
+          and simplicity of the ultimate clipboard manager.
+        </p>
+      </div>
+    </section>
+
+    <section class="breadcrumb">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Screenshots</span>
+        </nav>
+      </div>
+    </section>
+
+    <main>
+      <div class="container">
+        <div class="platform-tabs">
+          <div class="platform-tab active" data-platform="all">
+            All Platforms
+          </div>
+          <div class="platform-tab" data-platform="macos">macOS</div>
+          <div class="platform-tab" data-platform="linux">Linux</div>
+        </div>
+
+        <section class="screenshots-gallery">
+          <div class="gallery-grid">
+            <article class="screenshot-item" data-platform="macos">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync macOS Main Interface
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="macos-main"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Main Interface</h3>
+                <p>
+                  The clean, intuitive main interface of ClipSync on macOS,
+                  showing the clipboard history with text, images, and code
+                  snippets.
+                </p>
+                <span class="platform-badge macos">macOS</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="macos">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync macOS Search Feature
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="macos-search"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Search Functionality</h3>
+                <p>
+                  Powerful search capabilities allow you to quickly find any
+                  item in your clipboard history, even with partial matches.
+                </p>
+                <span class="platform-badge macos">macOS</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="linux">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync Linux Main Interface
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="linux-main"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Linux Interface</h3>
+                <p>
+                  ClipSync on Linux maintains the same functionality while
+                  integrating perfectly with popular desktop environments like
+                  GNOME and KDE.
+                </p>
+                <span class="platform-badge linux">Linux</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="macos">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync macOS Preferences
+                </div>
+                <div class="screenshot-overlay">
+                  <a
+                    href="#"
+                    class="view-full"
+                    data-lightbox="macos-preferences"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Preferences Panel</h3>
+                <p>
+                  Customize ClipSync to your workflow with extensive preferences
+                  for keyboard shortcuts, history size, and sync options.
+                </p>
+                <span class="platform-badge macos">macOS</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="linux">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync Linux Preferences
+                </div>
+                <div class="screenshot-overlay">
+                  <a
+                    href="#"
+                    class="view-full"
+                    data-lightbox="linux-preferences"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Linux Settings</h3>
+                <p>
+                  The settings panel on Linux offers the same customization
+                  options with a native look and feel for the platform.
+                </p>
+                <span class="platform-badge linux">Linux</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="both">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync Cross-Device Sync
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="sync"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Cross-Device Sync</h3>
+                <p>
+                  See how ClipSync seamlessly syncs your clipboard across
+                  multiple devices, regardless of platform.
+                </p>
+                <span class="platform-badge both">All Platforms</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="both">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync Code Snippet Support
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="code-snippets"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Code Snippet Support</h3>
+                <p>
+                  ClipSync intelligently recognizes and formats code snippets
+                  with syntax highlighting for dozens of programming languages.
+                </p>
+                <span class="platform-badge both">All Platforms</span>
+              </div>
+            </article>
+
+            <article class="screenshot-item" data-platform="both">
+              <div class="screenshot-img">
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(45deg, #e0e0e0, #f0f0f0);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #999;
+                    font-size: 1.2rem;
+                  "
+                >
+                  ClipSync Image Support
+                </div>
+                <div class="screenshot-overlay">
+                  <a href="#" class="view-full" data-lightbox="image-support"
+                    >View Full Size</a
+                  >
+                </div>
+              </div>
+              <div class="screenshot-info">
+                <h3>Image Clipboard Support</h3>
+                <p>
+                  ClipSync handles images in your clipboard with ease, allowing
+                  you to preview and reuse them anytime.
+                </p>
+                <span class="platform-badge both">All Platforms</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section class="download-cta">
+        <div class="container">
+          <h2>Ready to Try ClipSync?</h2>
+          <p>
+            Download now and experience the power of an advanced clipboard
+            manager. Available for both macOS and Linux.
+          </p>
+          <div class="download-buttons">
+            <a href="index.html#download-mac" class="download-btn primary">
+              🍎 Download for macOS
+            </a>
+            <a href="index.html#download-linux" class="download-btn">
+              🐧 Download for Linux
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" aria-label="Close lightbox">
+          &times;
+        </button>
+        <img
+          src="/placeholder.svg"
+          alt="ClipSync screenshot full size"
+          class="lightbox-img"
+          id="lightbox-img"
+        />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ClipSync</h3>
+            <p>
+              The ultimate clipboard manager for macOS and Linux. Boost your
+              productivity with seamless clipboard management.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="/docs">Documentation</a></li>
+              <li><a href="support.html">FAQ</a></li>
+              <li><a href="mailto:smahadalichowdhury@gmail.com">Contact Support</a></li>
+              <li><a href="/changelog">Changelog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="/terms">Terms of Service</a></li>
+              <li><a href="/blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://twitter.com/clipsync">Twitter</a></li>
+              <li><a href="https://github.com/clipsync">GitHub</a></li>
+              <li><a href="mailto:smahadalichowdhury@gmail.com">Email</a></li>
+              <li><a href="/newsletter">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 ClipSync. All rights reserved. Made with ❤️ for
+            productivity enthusiasts.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Platform tabs functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".platform-tab");
+        const items = document.querySelectorAll(".screenshot-item");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove("active"));
+
+            // Add active class to clicked tab
+            tab.classList.add("active");
+
+            const platform = tab.getAttribute("data-platform");
+
+            // Show/hide items based on platform
+            items.forEach((item) => {
+              const itemPlatform = item.getAttribute("data-platform");
+
+              if (
+                platform === "all" ||
+                platform === itemPlatform ||
+                (platform === "both" && itemPlatform === "both")
+              ) {
+                item.style.display = "block";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const lightboxCaption = document.getElementById("lightbox-caption");
+        const lightboxClose = document.querySelector(".lightbox-close");
+        const viewFullLinks = document.querySelectorAll(".view-full");
+
+        viewFullLinks.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            // In a real implementation, you would set the actual image source
+            // For this demo, we'll use a placeholder
+            const imgId = link.getAttribute("data-lightbox");
+            lightboxImg.src = `/placeholder.svg?height=800&width=1200`;
+
+            // Set caption based on the parent screenshot item
+            const screenshotItem = link.closest(".screenshot-item");
+            const caption = screenshotItem.querySelector("h3").textContent;
+            lightboxCaption.textContent = caption;
+
+            // Show lightbox
+            lightbox.classList.add("active");
+          });
+        });
+
+        lightboxClose.addEventListener("click", () => {
+          lightbox.classList.remove("active");
+        });
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener("click", (e) => {
+          if (e.target === lightbox) {
+            lightbox.classList.remove("active");
+          }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && lightbox.classList.contains("active")) {
+            lightbox.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
