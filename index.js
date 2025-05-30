@@ -162,7 +162,7 @@ class OSDetector {
       ">
         <h3 style="margin-bottom: 1rem;">📱 Mobile Device Detected</h3>
         <p style="margin-bottom: 1.5rem; opacity: 0.9;">
-          ClipSync is designed for desktop platforms. Please visit this page on your 
+          LocalClip is designed for desktop platforms. Please visit this page on your 
           ${this.detectedOS === 'ios' ? 'Mac' : 'Windows or Linux'} computer to download.
         </p>
         <p style="font-size: 0.9rem; opacity: 0.8;">
@@ -179,7 +179,7 @@ class OSDetector {
   updatePageTitle() {
     const currentTitle = document.title;
     if (!currentTitle.includes(this.getOSDisplayName()) && this.detectedOS !== 'unknown') {
-      document.title = `ClipSync for ${this.getOSDisplayName()} - ${currentTitle}`;
+      document.title = `LocalClip for ${this.getOSDisplayName()} - ${currentTitle}`;
     }
   }
 

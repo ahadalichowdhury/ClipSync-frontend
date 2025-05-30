@@ -1,6 +1,6 @@
-# ClipSync Website with OS Detection
+# LocalClip Website with OS Detection
 
-This is the frontend website for ClipSync, a clipboard manager application. The website now includes intelligent OS detection that automatically customizes the download experience based on the user's operating system.
+This is the frontend website for LocalClip, a clipboard manager application. The website now includes intelligent OS detection that automatically customizes the download experience based on the user's operating system.
 
 ## 🚀 Features
 
@@ -63,7 +63,7 @@ The `index.js` file contains an `OSDetector` class that:
    - Guidance to visit on desktop device
 
 4. **Page Title**:
-   - Updated to include detected OS (e.g., "ClipSync for macOS - ...")
+   - Updated to include detected OS (e.g., "LocalClip for macOS - ...")
 
 ## 🧪 Testing
 
