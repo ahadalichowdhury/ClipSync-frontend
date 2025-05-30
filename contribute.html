@@ -535,6 +535,30 @@
         outline: 2px solid #ff6b6b;
         outline-offset: 2px;
       }
+
+      /* Loading state */
+      .loading {
+        font-size: 1rem;
+        color: #999;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .error {
+        font-size: 1rem;
+        color: #dc3545;
+      }
     </style>
   </head>
   <body>
@@ -577,19 +601,27 @@
           <h2>GitHub Project Stats</h2>
           <div class="stats-grid">
             <div class="stat-card">
-              <div class="stat-number">★ 1.2k</div>
+              <div class="stat-number" id="github-stars">
+                <div class="loading">Loading...</div>
+              </div>
               <div class="stat-label">GitHub Stars</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number">243</div>
+              <div class="stat-number" id="github-forks">
+                <div class="loading">Loading...</div>
+              </div>
               <div class="stat-label">Forks</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number">42</div>
+              <div class="stat-number" id="github-contributors">
+                <div class="loading">Loading...</div>
+              </div>
               <div class="stat-label">Contributors</div>
             </div>
             <div class="stat-card">
-              <div class="stat-number">18</div>
+              <div class="stat-number" id="github-issues">
+                <div class="loading">Loading...</div>
+              </div>
               <div class="stat-label">Open Issues</div>
             </div>
           </div>
@@ -1014,5 +1046,78 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // GitHub API configuration
+      const GITHUB_REPO = "ahadalichowdhury/LocalClip-app";
+      const GITHUB_API_BASE = "https://api.github.com";
+
+      // Format number with appropriate suffix (K, M, etc.)
+      function formatNumber(num) {
+        if (num >= 1000000) {
+          return (num / 1000000).toFixed(1) + "M";
+        } else if (num >= 1000) {
+          return (num / 1000).toFixed(1) + "K";
+        }
+        return num.toString();
+      }
+
+      // Fetch GitHub repository data
+      async function fetchGitHubStats() {
+        try {
+          // Fetch repository information
+          const repoResponse = await fetch(
+            `${GITHUB_API_BASE}/repos/${GITHUB_REPO}`
+          );
+          if (!repoResponse.ok)
+            throw new Error("Failed to fetch repository data");
+          const repoData = await repoResponse.json();
+
+          // Fetch contributors count
+          const contributorsResponse = await fetch(
+            `${GITHUB_API_BASE}/repos/${GITHUB_REPO}/contributors?per_page=100`
+          );
+          if (!contributorsResponse.ok)
+            throw new Error("Failed to fetch contributors data");
+          const contributorsData = await contributorsResponse.json();
+
+          // Update the DOM elements
+          document.getElementById("github-stars").innerHTML = `★ ${formatNumber(
+            repoData.stargazers_count
+          )}`;
+          document.getElementById("github-forks").innerHTML = formatNumber(
+            repoData.forks_count
+          );
+          document.getElementById("github-contributors").innerHTML =
+            formatNumber(contributorsData.length);
+          document.getElementById("github-issues").innerHTML = formatNumber(
+            repoData.open_issues_count
+          );
+        } catch (error) {
+          console.error("Error fetching GitHub stats:", error);
+
+          // Show error state
+          const errorMessage = "Error loading";
+          document.getElementById(
+            "github-stars"
+          ).innerHTML = `<div class="error">${errorMessage}</div>`;
+          document.getElementById(
+            "github-forks"
+          ).innerHTML = `<div class="error">${errorMessage}</div>`;
+          document.getElementById(
+            "github-contributors"
+          ).innerHTML = `<div class="error">${errorMessage}</div>`;
+          document.getElementById(
+            "github-issues"
+          ).innerHTML = `<div class="error">${errorMessage}</div>`;
+        }
+      }
+
+      // Load GitHub stats when page loads
+      document.addEventListener("DOMContentLoaded", fetchGitHubStats);
+
+      // Optional: Refresh stats every 5 minutes
+      setInterval(fetchGitHubStats, 300000);
+    </script>
   </body>
 </html>
